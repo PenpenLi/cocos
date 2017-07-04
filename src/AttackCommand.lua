@@ -1,4 +1,4 @@
-require "Helper"
+ï»¿require "Helper"
 require "Manager"
 require "GlobalVariables"
 
@@ -52,7 +52,7 @@ end
 
 BasicCollider = class("BasicCollider", function()
     local node = cc.Sprite3D:create()
-    node:setCascadeColorEnabled(true) -- ÑÕÉ«´«µİ¸ø×Ó½Úµã
+    node:setCascadeColorEnabled(true) -- é¢œè‰²ä¼ é€’ç»™å­èŠ‚ç‚¹
     return node
 end)
 

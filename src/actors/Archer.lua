@@ -1,4 +1,4 @@
-require "GlobalVariables"
+﻿require "GlobalVariables"
 require "MessageDispatchCenter"
 require "Helper"
 require "AttackCommand"

@@ -1,4 +1,4 @@
-require "Helper"
+ï»¿require "Helper"
 require "AttackCommand"
 require "GlobalVariables"
 --type
@@ -254,7 +254,7 @@ function Actor:dyingMode(knockSource, knockAmount)
     self._AIEnabled = false
 end
 --=======Base Update Functions
--- Ä£ĞÍµÄ×´Ì¬×ª»»
+-- æ¨¡å‹çš„çŠ¶æ€è½¬æ¢
 function Actor:stateMachineUpdate(dt)
     local state = self:getStateType()
     if state == EnumStateType.WALKING  then
@@ -264,7 +264,7 @@ function Actor:stateMachineUpdate(dt)
     elseif state == EnumStateType.ATTACKING then
         --I am attacking someone, I probably has a target
         self:attackUpdate(dt)
-    elseif state == EnumStateType.DEFENDING then -- ´Ó¹¥»÷ÇĞ»»µ½·ÀÊØ
+    elseif state == EnumStateType.DEFENDING then -- ä»æ”»å‡»åˆ‡æ¢åˆ°é˜²å®ˆ
         --I am trying to defend from an attack, i need to finish my defending animation
         --TODO: update for defending
     elseif state == EnumStateType.KNOCKING then
@@ -345,7 +345,7 @@ function Actor:AI()
     end
 end
 function Actor:baseUpdate(dt)
-    self._myPos = getPosTable(self) -- Î»ÖÃ
+    self._myPos = getPosTable(self) -- ä½ç½®
     self._aliveTime = self._aliveTime+dt
     if self._AIEnabled then
         self._AITimer = self._AITimer+dt
